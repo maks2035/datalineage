@@ -1,0 +1,14 @@
+source:
+  type: postgres
+  config:
+    include_tables: true
+    database: mydatabase
+    password: mysecretpassword
+    profiling:
+      enabled: true
+      profile_table_level_only: true
+    host_port: 'localhost:5432'
+    include_views: true
+    stateful_ingestion:
+      enabled: false
+    username: postgres
